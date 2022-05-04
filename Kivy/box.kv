@@ -1,0 +1,26 @@
+
+<MyLayout>
+    BoxLayout:
+        orientation: "vertical"
+        # orientation: "horizontal"
+        size: root.width, root.height
+
+        spacing: 20 # ボタンの間の空白
+        padding: 50 # ボタンの外側
+
+        Button:
+            text: "Hello World!"
+
+        Button:
+            text: "Goodbye World!"
+
+        Button:
+            text: "I`m Hungry!"
+            pos_hint: {'center_x': .5} # x軸の位置を設定（今回は必ず中心に置く)
+
+            size_hint: (.5,.5)
+            
+            # size_hint: (None,None) 
+            # width: 200
+            # height: 50
+            

@@ -1,0 +1,45 @@
+#:import utils kivy.utils
+# kvファイル内でインポートが必要となる場合・・・？？
+
+<MyGridLayout>
+
+    name:name
+    pizza:pizza
+    color:color
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "Name"
+            TextInput:
+                id: name
+                multiline:False
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#FF8A00')
+
+            Label:
+                text: "Favorite Pizza"
+            TextInput:
+                id: pizza
+                multiline:False
+            
+            Label:
+                text: "Favorite Color"
+            TextInput:
+                id: color
+                multiline:False
+
+        Button:
+            text: "Submit"
+            font_size: 32
+            on_press: root.press()
+            #RGB - A
+            background_normal: ''
+            # background_color: (238/255,250/255,0,1)
+            # 色を16進数表記で指定したい場合、下記「utils」が必要となる。
+            background_color: utils.get_color_from_hex('#FF8A00')
