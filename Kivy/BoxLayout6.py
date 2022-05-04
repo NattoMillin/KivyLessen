@@ -4,7 +4,7 @@ from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
 from kivy.lang import Builder
 
-Builder.load_file('inherit.kv') #　path形式で指定可能。
+Builder.load_file('box.kv') #　path形式で指定可能。
 
         #//----------------------------------------------------------------------------------
         # BoxLayoutについて学ぼう!
